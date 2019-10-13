@@ -40,6 +40,11 @@ void Artnet::begin()
   Udp.begin(ART_NET_PORT);
 }
 
+void Artnet::stop()
+{
+  Udp.stop();
+}
+
 void Artnet::setBroadcast(byte bc[])
 {
   //sets the broadcast address
